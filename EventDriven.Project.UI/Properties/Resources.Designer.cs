@@ -63,6 +63,36 @@ namespace EventDriven.Project.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _546226130_24550255771293743_5835087672123755509_n {
+            get {
+                object obj = ResourceManager.GetObject("546226130_24550255771293743_5835087672123755509_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _547096583_1527320285115077_582208575037827567_n {
+            get {
+                object obj = ResourceManager.GetObject("547096583_1527320285115077_582208575037827567_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _548607005_1839201253329862_3893103805273494200_n {
+            get {
+                object obj = ResourceManager.GetObject("548607005_1839201253329862_3893103805273494200_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap peksur {
             get {
                 object obj = ResourceManager.GetObject("peksur", resourceCulture);

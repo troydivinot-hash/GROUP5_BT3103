@@ -9,3 +9,5 @@
 /EventDriven.Project.Model/obj
 /EventDriven.Project.UI/bin/Debug/net8.0-windows
 /EventDriven.Project.UI/obj
+/EventDriven.Project.DB/EventDriven.Project.DB.jfm
+/EventDriven.Project.DB/EventDriven.Project.DB.dbmdl
