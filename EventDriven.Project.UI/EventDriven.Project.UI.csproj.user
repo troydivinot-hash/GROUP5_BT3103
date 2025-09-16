@@ -7,10 +7,22 @@
     <Compile Update="Cashier Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form1.cs">
+    <Compile Update="Cashier Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Admin Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Login User Roles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="loginn.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Registrar Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Registrar Login.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
