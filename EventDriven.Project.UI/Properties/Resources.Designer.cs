@@ -99,5 +99,15 @@ namespace EventDriven.Project.UI.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_school_classroom_with_chalkboard_and_desk_in_3d_rendering_image_3850971 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-school-classroom-with-chalkboard-and-desk-in-3d-rendering-image_3850971", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
