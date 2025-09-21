@@ -10,11 +10,11 @@ Post-Deployment Script Template
 --------------------------------------------------------------------------------------
 */
 
-INSERT INTO TblUser (Username, Password) 
+INSERT INTO TblUser (Username, Password, Roles) 
 VALUES 
-    ('admin', 'admin123'),
-    ('registrar', 'registrar123'),
-    ('cashier', 'cashier123');
+    ('admin', 'admin123', 'Admin'),
+    ('registrar', 'registrar123', 'Registrar'),
+    ('cashier', 'cashier123', 'Cashier');
 
 -- Student Table Values
 INSERT INTO Student (LastName, FirstName, MiddleName, GradeLevel, Section, Gender, ContactNumber, Address, EnrollmentStatus)
