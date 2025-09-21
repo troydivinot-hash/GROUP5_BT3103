@@ -30,17 +30,20 @@
         {
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
-            adminstinfo = new Button();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
             button7 = new Button();
+            button6 = new Button();
+            button5 = new Button();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
+            adminstinfo = new Button();
+            button4 = new Button();
             panel2 = new Panel();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -72,61 +75,27 @@
             panel1.TabIndex = 1;
             panel1.Paint += panel1_Paint;
             // 
-            // adminstinfo
+            // button7
             // 
-            adminstinfo.BackColor = SystemColors.ButtonFace;
-            adminstinfo.Location = new Point(45, 229);
-            adminstinfo.Margin = new Padding(4);
-            adminstinfo.Name = "adminstinfo";
-            adminstinfo.Size = new Size(195, 46);
-            adminstinfo.TabIndex = 106;
-            adminstinfo.Text = "Student Information";
-            adminstinfo.UseVisualStyleBackColor = false;
-            adminstinfo.Click += adminstinfo_Click;
+            button7.BackColor = SystemColors.ButtonFace;
+            button7.Location = new Point(45, 712);
+            button7.Margin = new Padding(4);
+            button7.Name = "button7";
+            button7.Size = new Size(195, 46);
+            button7.TabIndex = 108;
+            button7.Text = "LogOut";
+            button7.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // button6
             // 
-            button1.BackColor = SystemColors.ButtonFace;
-            button1.Location = new Point(45, 426);
-            button1.Margin = new Padding(4);
-            button1.Name = "button1";
-            button1.Size = new Size(195, 46);
-            button1.TabIndex = 107;
-            button1.Text = "Payment";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            button2.BackColor = SystemColors.ButtonFace;
-            button2.Location = new Point(45, 363);
-            button2.Margin = new Padding(4);
-            button2.Name = "button2";
-            button2.Size = new Size(195, 46);
-            button2.TabIndex = 108;
-            button2.Text = "Student Registration";
-            button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            button3.BackColor = SystemColors.ButtonFace;
-            button3.Location = new Point(45, 296);
-            button3.Margin = new Padding(4);
-            button3.Name = "button3";
-            button3.Size = new Size(195, 46);
-            button3.TabIndex = 109;
-            button3.Text = "Assesment";
-            button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            button4.BackColor = SystemColors.Control;
-            button4.Location = new Point(392, 349);
-            button4.Margin = new Padding(4);
-            button4.Name = "button4";
-            button4.Size = new Size(195, 46);
-            button4.TabIndex = 106;
-            button4.Text = "Student Information";
-            button4.UseVisualStyleBackColor = false;
+            button6.BackColor = SystemColors.ButtonFace;
+            button6.Location = new Point(45, 562);
+            button6.Margin = new Padding(4);
+            button6.Name = "button6";
+            button6.Size = new Size(195, 46);
+            button6.TabIndex = 110;
+            button6.Text = "Reports";
+            button6.UseVisualStyleBackColor = false;
             // 
             // button5
             // 
@@ -140,35 +109,80 @@
             button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click;
             // 
-            // button6
+            // button3
             // 
-            button6.BackColor = SystemColors.ButtonFace;
-            button6.Location = new Point(45, 562);
-            button6.Margin = new Padding(4);
-            button6.Name = "button6";
-            button6.Size = new Size(195, 46);
-            button6.TabIndex = 110;
-            button6.Text = "Reports";
-            button6.UseVisualStyleBackColor = false;
+            button3.BackColor = SystemColors.ButtonFace;
+            button3.Location = new Point(45, 296);
+            button3.Margin = new Padding(4);
+            button3.Name = "button3";
+            button3.Size = new Size(195, 46);
+            button3.TabIndex = 109;
+            button3.Text = "Assesment";
+            button3.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // button2
             // 
-            button7.BackColor = SystemColors.ButtonFace;
-            button7.Location = new Point(45, 712);
-            button7.Margin = new Padding(4);
-            button7.Name = "button7";
-            button7.Size = new Size(195, 46);
-            button7.TabIndex = 108;
-            button7.Text = "LogOut";
-            button7.UseVisualStyleBackColor = false;
+            button2.BackColor = SystemColors.ButtonFace;
+            button2.Location = new Point(45, 363);
+            button2.Margin = new Padding(4);
+            button2.Name = "button2";
+            button2.Size = new Size(195, 46);
+            button2.TabIndex = 108;
+            button2.Text = "Student Registration";
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.ButtonFace;
+            button1.Location = new Point(45, 426);
+            button1.Margin = new Padding(4);
+            button1.Name = "button1";
+            button1.Size = new Size(195, 46);
+            button1.TabIndex = 107;
+            button1.Text = "Payment";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // adminstinfo
+            // 
+            adminstinfo.BackColor = SystemColors.ButtonFace;
+            adminstinfo.Location = new Point(45, 229);
+            adminstinfo.Margin = new Padding(4);
+            adminstinfo.Name = "adminstinfo";
+            adminstinfo.Size = new Size(195, 46);
+            adminstinfo.TabIndex = 106;
+            adminstinfo.Text = "Student Information";
+            adminstinfo.UseVisualStyleBackColor = false;
+            adminstinfo.Click += adminstinfo_Click;
+            // 
+            // button4
+            // 
+            button4.BackColor = SystemColors.Control;
+            button4.Location = new Point(392, 349);
+            button4.Margin = new Padding(4);
+            button4.Name = "button4";
+            button4.Size = new Size(195, 46);
+            button4.TabIndex = 106;
+            button4.Text = "Student Information";
+            button4.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
             panel2.BackColor = SystemColors.InactiveCaption;
-            panel2.Location = new Point(331, 44);
+            panel2.Controls.Add(pictureBox2);
+            panel2.Location = new Point(331, 34);
             panel2.Name = "panel2";
-            panel2.Size = new Size(736, 653);
+            panel2.Size = new Size(736, 663);
             panel2.TabIndex = 123;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.pngtree_school_classroom_with_chalkboard_and_desk_in_3d_rendering_image_3850971;
+            pictureBox2.Location = new Point(0, 37);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(736, 594);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 0;
+            pictureBox2.TabStop = false;
             // 
             // AdminDashboard
             // 
@@ -183,6 +197,8 @@
             Load += AdminDashboard_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -199,5 +215,6 @@
         private Button button6;
         private Button button7;
         private Panel panel2;
+        private PictureBox pictureBox2;
     }
 }

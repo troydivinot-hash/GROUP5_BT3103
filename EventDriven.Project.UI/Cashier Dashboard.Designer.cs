@@ -36,7 +36,10 @@
             cashierreports = new Button();
             textBox1 = new TextBox();
             panel1 = new Panel();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -107,10 +110,21 @@
             // panel1
             // 
             panel1.BackColor = SystemColors.InactiveCaption;
+            panel1.Controls.Add(pictureBox2);
             panel1.Location = new Point(313, 30);
             panel1.Name = "panel1";
             panel1.Size = new Size(736, 653);
             panel1.TabIndex = 129;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.pngtree_school_classroom_with_chalkboard_and_desk_in_3d_rendering_image_3850971;
+            pictureBox2.Location = new Point(0, 32);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(736, 594);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 0;
+            pictureBox2.TabStop = false;
             // 
             // Cashier_Dashboard
             // 
@@ -128,6 +142,8 @@
             Text = "Cashier_Dashboard";
             Load += Cashier_Dashboard_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -141,5 +157,6 @@
         private Button cashierreports;
         private TextBox textBox1;
         private Panel panel1;
+        private PictureBox pictureBox2;
     }
 }
