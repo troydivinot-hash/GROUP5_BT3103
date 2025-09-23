@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            panel2 = new Panel();
-            panel3 = new Panel();
             panel4 = new Panel();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            button1 = new Button();
-            button2 = new Button();
             button3 = new Button();
+            pictureBox3 = new PictureBox();
+            panel3 = new Panel();
+            button2 = new Button();
+            pictureBox2 = new PictureBox();
+            panel2 = new Panel();
+            pictureBox1 = new PictureBox();
+            button1 = new Button();
             panel5 = new Panel();
             label1 = new Label();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
-            panel3.SuspendLayout();
             panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel5.SuspendLayout();
             SuspendLayout();
             // 
@@ -61,15 +61,36 @@
             panel1.Size = new Size(1098, 401);
             panel1.TabIndex = 0;
             // 
-            // panel2
+            // panel4
             // 
-            panel2.BackColor = SystemColors.ControlLight;
-            panel2.Controls.Add(pictureBox1);
-            panel2.Controls.Add(button1);
-            panel2.Location = new Point(44, 50);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(286, 299);
-            panel2.TabIndex = 0;
+            panel4.BackColor = SystemColors.ControlLight;
+            panel4.Controls.Add(button3);
+            panel4.Controls.Add(pictureBox3);
+            panel4.Location = new Point(756, 50);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(286, 299);
+            panel4.TabIndex = 1;
+            // 
+            // button3
+            // 
+            button3.BackColor = SystemColors.ControlDark;
+            button3.Location = new Point(92, 224);
+            button3.Name = "button3";
+            button3.Size = new Size(112, 34);
+            button3.TabIndex = 4;
+            button3.Text = "Registrar";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources._546226130_24550255771293743_5835087672123755509_n;
+            pictureBox3.Location = new Point(56, 41);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(174, 148);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 2;
+            pictureBox3.TabStop = false;
             // 
             // panel3
             // 
@@ -82,25 +103,16 @@
             panel3.TabIndex = 1;
             panel3.Paint += panel3_Paint;
             // 
-            // panel4
+            // button2
             // 
-            panel4.BackColor = SystemColors.ControlLight;
-            panel4.Controls.Add(button3);
-            panel4.Controls.Add(pictureBox3);
-            panel4.Location = new Point(756, 50);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(286, 299);
-            panel4.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources._547096583_1527320285115077_582208575037827567_n;
-            pictureBox1.Location = new Point(58, 41);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(174, 148);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            button2.BackColor = SystemColors.ButtonShadow;
+            button2.Location = new Point(87, 224);
+            button2.Name = "button2";
+            button2.Size = new Size(112, 34);
+            button2.TabIndex = 3;
+            button2.Text = "Cashier";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // pictureBox2
             // 
@@ -112,15 +124,25 @@
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
             // 
-            // pictureBox3
+            // panel2
             // 
-            pictureBox3.Image = Properties.Resources._546226130_24550255771293743_5835087672123755509_n;
-            pictureBox3.Location = new Point(56, 41);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(174, 148);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 2;
-            pictureBox3.TabStop = false;
+            panel2.BackColor = SystemColors.ControlLight;
+            panel2.Controls.Add(pictureBox1);
+            panel2.Controls.Add(button1);
+            panel2.Location = new Point(44, 50);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(286, 299);
+            panel2.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources._547096583_1527320285115077_582208575037827567_n;
+            pictureBox1.Location = new Point(58, 41);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(174, 148);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // button1
             // 
@@ -131,26 +153,7 @@
             button1.TabIndex = 2;
             button1.Text = "Admin";
             button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            button2.BackColor = SystemColors.ButtonShadow;
-            button2.Location = new Point(87, 224);
-            button2.Name = "button2";
-            button2.Size = new Size(112, 34);
-            button2.TabIndex = 3;
-            button2.Text = "Cashier";
-            button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            button3.BackColor = SystemColors.ControlDark;
-            button3.Location = new Point(92, 224);
-            button3.Name = "button3";
-            button3.Size = new Size(112, 34);
-            button3.TabIndex = 4;
-            button3.Text = "Registrar";
-            button3.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // panel5
             // 
@@ -181,13 +184,14 @@
             Controls.Add(panel1);
             Name = "Login_User_Roles";
             Text = "Login_User_Roles";
+            Load += Login_User_Roles_Load;
             panel1.ResumeLayout(false);
-            panel2.ResumeLayout(false);
-            panel3.ResumeLayout(false);
             panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             ResumeLayout(false);

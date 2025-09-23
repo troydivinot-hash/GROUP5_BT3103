@@ -27,4 +27,9 @@
     <Folder Include="Assets\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EventDriven.Project.Logic\EventDriven.Project.Logic.csproj" />
+    <ProjectReference Include="..\EventDriven.Project.Model\EventDriven.Project.Model.csproj" />
+  </ItemGroup>
+
 </Project>

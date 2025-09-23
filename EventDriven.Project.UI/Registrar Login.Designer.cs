@@ -35,9 +35,10 @@
             username = new Label();
             passwordtxt = new TextBox();
             usernametxt = new TextBox();
-            adminbtn = new Button();
+            Registrarbtn = new Button();
             label3 = new Label();
             label2 = new Label();
+            backbtn = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -62,7 +63,7 @@
             panel2.Controls.Add(username);
             panel2.Controls.Add(passwordtxt);
             panel2.Controls.Add(usernametxt);
-            panel2.Controls.Add(adminbtn);
+            panel2.Controls.Add(Registrarbtn);
             panel2.Location = new Point(22, 89);
             panel2.Name = "panel2";
             panel2.Size = new Size(737, 208);
@@ -120,17 +121,18 @@
             usernametxt.Size = new Size(292, 31);
             usernametxt.TabIndex = 6;
             // 
-            // adminbtn
+            // Registrarbtn
             // 
-            adminbtn.BackColor = SystemColors.ActiveBorder;
-            adminbtn.ForeColor = SystemColors.ActiveCaptionText;
-            adminbtn.Location = new Point(422, 159);
-            adminbtn.Margin = new Padding(4);
-            adminbtn.Name = "adminbtn";
-            adminbtn.Size = new Size(118, 36);
-            adminbtn.TabIndex = 5;
-            adminbtn.Text = "Login";
-            adminbtn.UseVisualStyleBackColor = false;
+            Registrarbtn.BackColor = SystemColors.ActiveBorder;
+            Registrarbtn.ForeColor = SystemColors.ActiveCaptionText;
+            Registrarbtn.Location = new Point(422, 159);
+            Registrarbtn.Margin = new Padding(4);
+            Registrarbtn.Name = "Registrarbtn";
+            Registrarbtn.Size = new Size(118, 36);
+            Registrarbtn.TabIndex = 5;
+            Registrarbtn.Text = "Login";
+            Registrarbtn.UseVisualStyleBackColor = false;
+            Registrarbtn.Click += Registrarbtn_Click;
             // 
             // label3
             // 
@@ -156,11 +158,25 @@
             label2.TabIndex = 3;
             label2.Text = "Password";
             // 
+            // backbtn
+            // 
+            backbtn.BackColor = SystemColors.ActiveBorder;
+            backbtn.ForeColor = SystemColors.ActiveCaptionText;
+            backbtn.Location = new Point(57, 30);
+            backbtn.Margin = new Padding(4);
+            backbtn.Name = "backbtn";
+            backbtn.Size = new Size(118, 36);
+            backbtn.TabIndex = 13;
+            backbtn.Text = "Back";
+            backbtn.UseVisualStyleBackColor = false;
+            backbtn.Click += backbtn_Click;
+            // 
             // Registrar_Login
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1053, 521);
+            Controls.Add(backbtn);
             Controls.Add(panel1);
             Name = "Registrar_Login";
             Text = "Registrar_Login";
@@ -181,8 +197,9 @@
         private Label username;
         private TextBox passwordtxt;
         private TextBox usernametxt;
-        private Button adminbtn;
+        private Button Registrarbtn;
         private Label label3;
         private Label label2;
+        private Button backbtn;
     }
 }

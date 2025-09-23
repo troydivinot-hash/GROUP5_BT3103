@@ -93,6 +93,7 @@
             Controls.Add(panel1);
             Name = "loginn";
             Text = "Login";
+            Load += loginn_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

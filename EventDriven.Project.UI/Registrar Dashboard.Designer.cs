@@ -75,6 +75,7 @@
             adminlogout.TabIndex = 119;
             adminlogout.Text = "LogOut";
             adminlogout.UseVisualStyleBackColor = false;
+            adminlogout.Click += adminlogout_Click;
             // 
             // adminreports
             // 

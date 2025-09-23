@@ -15,7 +15,7 @@ VALUES
     ('admin', 'admin123', 'Admin'),
     ('registrar', 'registrar123', 'Registrar'),
     ('cashier', 'cashier123', 'Cashier');
-
+/*
 -- Student Table Values
 INSERT INTO Student (LastName, FirstName, MiddleName, GradeLevel, Section, Gender, ContactNumber, Address, EnrollmentStatus)
 VALUES -- Grade 7 - Section Fluorescent
@@ -75,3 +75,4 @@ VALUES -- Grade 7 - Section Fluorescent
 ('Cruz', 'Nathan', 'Lopez', 10, 'Incandescent', 'Male', '09123456748', 'Mabalacat City', 'Enrolled'),
 ('Aquino', 'Sophia', 'Ortiz', 10, 'Incandescent', 'Female', '09123456749', 'San Fernando, Pampanga', 'Enrolled'),
 ('Domingo', 'Ethan', 'Ramos', 10, 'Incandescent', 'Male', '09123456750', 'Clark, Pampanga', 'Enrolled');
+*/

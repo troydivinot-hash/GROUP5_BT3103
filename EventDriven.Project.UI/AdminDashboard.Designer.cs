@@ -85,6 +85,7 @@
             button7.TabIndex = 108;
             button7.Text = "LogOut";
             button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
             // 
             // button6
             // 
@@ -188,7 +189,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1088, 740);
+            ClientSize = new Size(1091, 740);
             Controls.Add(panel2);
             Controls.Add(button4);
             Controls.Add(panel1);

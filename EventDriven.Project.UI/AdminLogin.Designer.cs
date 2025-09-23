@@ -1,6 +1,6 @@
 ﻿namespace EventDriven.Project.UI
 {
-    partial class Form1
+    partial class AdminLogin
     {
         /// <summary>
         ///  Required designer variable.
@@ -38,6 +38,7 @@
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
             panel2 = new Panel();
+            backbtn = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -47,7 +48,7 @@
             // 
             passwordtxt.BackColor = SystemColors.ButtonShadow;
             passwordtxt.Location = new Point(348, 108);
-            passwordtxt.Margin = new Padding(4, 4, 4, 4);
+            passwordtxt.Margin = new Padding(4);
             passwordtxt.Name = "passwordtxt";
             passwordtxt.Size = new Size(292, 31);
             passwordtxt.TabIndex = 1;
@@ -80,18 +81,19 @@
             adminbtn.BackColor = SystemColors.ActiveBorder;
             adminbtn.ForeColor = SystemColors.ActiveCaptionText;
             adminbtn.Location = new Point(422, 159);
-            adminbtn.Margin = new Padding(4, 4, 4, 4);
+            adminbtn.Margin = new Padding(4);
             adminbtn.Name = "adminbtn";
             adminbtn.Size = new Size(118, 36);
             adminbtn.TabIndex = 5;
             adminbtn.Text = "Login";
             adminbtn.UseVisualStyleBackColor = false;
+            adminbtn.Click += adminbtn_Click;
             // 
             // usernametxt
             // 
             usernametxt.BackColor = SystemColors.ButtonShadow;
             usernametxt.Location = new Point(348, 57);
-            usernametxt.Margin = new Padding(4, 4, 4, 4);
+            usernametxt.Margin = new Padding(4);
             usernametxt.Name = "usernametxt";
             usernametxt.Size = new Size(292, 31);
             usernametxt.TabIndex = 6;
@@ -126,7 +128,7 @@
             pictureBox1.BackColor = SystemColors.ButtonShadow;
             pictureBox1.Image = Properties.Resources._547096583_1527320285115077_582208575037827567_n;
             pictureBox1.Location = new Point(21, 14);
-            pictureBox1.Margin = new Padding(4, 4, 4, 4);
+            pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(211, 175);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -160,16 +162,30 @@
             panel2.Size = new Size(737, 208);
             panel2.TabIndex = 11;
             // 
-            // Form1
+            // backbtn
+            // 
+            backbtn.BackColor = SystemColors.ActiveBorder;
+            backbtn.ForeColor = SystemColors.ActiveCaptionText;
+            backbtn.Location = new Point(33, 26);
+            backbtn.Margin = new Padding(4);
+            backbtn.Name = "backbtn";
+            backbtn.Size = new Size(118, 36);
+            backbtn.TabIndex = 10;
+            backbtn.Text = "Back";
+            backbtn.UseVisualStyleBackColor = false;
+            backbtn.Click += backbtn_Click;
+            // 
+            // AdminLogin
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(224, 224, 224);
             ClientSize = new Size(1053, 521);
+            Controls.Add(backbtn);
             Controls.Add(panel1);
             ForeColor = Color.DeepSkyBlue;
-            Margin = new Padding(4, 4, 4, 4);
-            Name = "Form1";
+            Margin = new Padding(4);
+            Name = "AdminLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Admin Login";
             Load += Form1_Load;
@@ -192,5 +208,6 @@
         private PictureBox pictureBox1;
         private Panel panel1;
         private Panel panel2;
+        private Button backbtn;
     }
 }

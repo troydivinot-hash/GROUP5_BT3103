@@ -32,12 +32,13 @@
             passwordtxt = new TextBox();
             label2 = new Label();
             usernametxt = new TextBox();
-            adminbtn = new Button();
+            Cashierbtn = new Button();
             label3 = new Label();
             pictureBox1 = new PictureBox();
             password = new Label();
             panel1 = new Panel();
             panel2 = new Panel();
+            backbtn = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -83,17 +84,18 @@
             usernametxt.Size = new Size(292, 31);
             usernametxt.TabIndex = 6;
             // 
-            // adminbtn
+            // Cashierbtn
             // 
-            adminbtn.BackColor = SystemColors.ActiveBorder;
-            adminbtn.ForeColor = SystemColors.ActiveCaptionText;
-            adminbtn.Location = new Point(422, 159);
-            adminbtn.Margin = new Padding(4);
-            adminbtn.Name = "adminbtn";
-            adminbtn.Size = new Size(118, 36);
-            adminbtn.TabIndex = 5;
-            adminbtn.Text = "Login";
-            adminbtn.UseVisualStyleBackColor = false;
+            Cashierbtn.BackColor = SystemColors.ActiveBorder;
+            Cashierbtn.ForeColor = SystemColors.ActiveCaptionText;
+            Cashierbtn.Location = new Point(422, 159);
+            Cashierbtn.Margin = new Padding(4);
+            Cashierbtn.Name = "Cashierbtn";
+            Cashierbtn.Size = new Size(118, 36);
+            Cashierbtn.TabIndex = 5;
+            Cashierbtn.Text = "Login";
+            Cashierbtn.UseVisualStyleBackColor = false;
+            Cashierbtn.Click += Cashierbtn_Click;
             // 
             // label3
             // 
@@ -150,17 +152,31 @@
             panel2.Controls.Add(username);
             panel2.Controls.Add(passwordtxt);
             panel2.Controls.Add(usernametxt);
-            panel2.Controls.Add(adminbtn);
+            panel2.Controls.Add(Cashierbtn);
             panel2.Location = new Point(22, 89);
             panel2.Name = "panel2";
             panel2.Size = new Size(737, 208);
             panel2.TabIndex = 11;
+            // 
+            // backbtn
+            // 
+            backbtn.BackColor = SystemColors.ActiveBorder;
+            backbtn.ForeColor = SystemColors.ActiveCaptionText;
+            backbtn.Location = new Point(50, 27);
+            backbtn.Margin = new Padding(4);
+            backbtn.Name = "backbtn";
+            backbtn.Size = new Size(118, 36);
+            backbtn.TabIndex = 12;
+            backbtn.Text = "Back";
+            backbtn.UseVisualStyleBackColor = false;
+            backbtn.Click += backbtn_Click;
             // 
             // Cashier_Login
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1053, 521);
+            Controls.Add(backbtn);
             Controls.Add(panel1);
             Name = "Cashier_Login";
             Text = "Cashier_Login";
@@ -178,11 +194,12 @@
         private TextBox passwordtxt;
         private Label label2;
         private TextBox usernametxt;
-        private Button adminbtn;
+        private Button Cashierbtn;
         private Label label3;
         private PictureBox pictureBox1;
         private Label password;
         private Panel panel1;
         private Panel panel2;
+        private Button backbtn;
     }
 }
