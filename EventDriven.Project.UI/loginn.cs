@@ -24,10 +24,17 @@ namespace EventDriven.Project.UI
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+          Login_User_Roles user_Roles = new Login_User_Roles();
+          user_Roles.Show();
+          this.Hide();
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loginn_Load(object sender, EventArgs e)
         {
 
         }

@@ -85,6 +85,7 @@
             cashierlogout.TabIndex = 125;
             cashierlogout.Text = "LogOut";
             cashierlogout.UseVisualStyleBackColor = false;
+            cashierlogout.Click += cashierlogout_Click;
             // 
             // cashierreports
             // 

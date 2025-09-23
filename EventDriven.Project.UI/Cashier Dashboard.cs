@@ -21,5 +21,12 @@ namespace EventDriven.Project.UI
         {
 
         }
+
+        private void cashierlogout_Click(object sender, EventArgs e)
+        {
+            Login_User_Roles login_User_Roles = new Login_User_Roles();
+            login_User_Roles.Show();
+            this.Close();
+        }
     }
 }

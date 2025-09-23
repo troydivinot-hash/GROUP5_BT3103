@@ -1,24 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using EventDriven.Project.Logic.Controller;
 using EventDriven.Project.Model;
-
+using EventDriven.Project.Logic.Controller;
 namespace EventDriven.Project.UI
 {
-
-    public partial class Cashier_Login : Form
+    public partial class AdminLogin : Form
     {
         private UserController userController;
         int loginAttempt = 4;
-
-        public Cashier_Login()
+        public AdminLogin()
         {
             InitializeComponent();
             userController = new UserController();
@@ -27,21 +15,50 @@ namespace EventDriven.Project.UI
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
 
-        private void Cashierbtn_Click(object sender, EventArgs e)
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void username_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void adminbtn_Click(object sender, EventArgs e)
         {
             try
 
             {
-                UserModel Cashier = userController.ValidateUser(usernametxt.Text, passwordtxt.Text);
-                if (Cashier != null)
+                UserModel Admin = userController.ValidateUser(usernametxt.Text, passwordtxt.Text);
+                if (Admin != null)
 
                 {
-                    if (Cashier.Role.Equals("Cashier"))
+                    if (Admin.Role.Equals("Admin"))
                     {
-                        MessageBox.Show("Login Successful! Welcome " + Cashier.Username, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Cashier_Dashboard cashierdashboard = new Cashier_Dashboard();
-                        cashierdashboard.Show();
+                        MessageBox.Show("Login Successful! Welcome " + Admin.Username, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        AdminDashboard Admindashboard = new AdminDashboard();
+                        Admindashboard.Show();
                         this.Close();
                     }
                     else
@@ -69,7 +86,10 @@ namespace EventDriven.Project.UI
                 {
                     MessageBox.Show(ex.Message);
                 }
+
+               
             }
+           
 
         }
 
