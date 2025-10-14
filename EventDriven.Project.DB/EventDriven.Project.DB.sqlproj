@@ -58,6 +58,7 @@
     <Folder Include="Properties" />
     <Folder Include="Table" />
     <Folder Include="Script" />
+    <Folder Include="Stored Procedure" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script\Script.PostDeployment1.sql" />
@@ -65,5 +66,6 @@
   <ItemGroup>
     <Build Include="Table\TblUser.sql" />
     <Build Include="Table\Student.sql" />
+    <Build Include="Stored Procedure\GetAllStudents.sql" />
   </ItemGroup>
 </Project>

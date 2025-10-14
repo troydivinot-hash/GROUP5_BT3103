@@ -7,13 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EventDriven.Project.Logic.Controller;
 
 namespace EventDriven.Project.UI
 {
     public partial class Student_Information : Form
     {
+        private StudentController studentController; 
         public Student_Information()
         {
+            studentController = new StudentController();
             InitializeComponent();
         }
 
@@ -24,7 +27,7 @@ namespace EventDriven.Project.UI
 
         private void Student_Information_Load(object sender, EventArgs e)
         {
-
+            dataGridView1.DataSource = studentController.GetAllStudents();
         }
     }
 }

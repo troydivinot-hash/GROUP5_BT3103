@@ -34,7 +34,9 @@ namespace EventDriven.Project.UI
 
         private void adminstinfo_Click(object sender, EventArgs e)
         {
-
+            Student_Information student_information = new Student_Information();
+            student_information.Show();
+            this.Close();
         }
 
         private void button5_Click(object sender, EventArgs e)
