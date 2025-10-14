@@ -44,5 +44,26 @@ namespace EventDriven.Project.Logic.Repository
                 }
             }
         }
+        public void AddStudent(StudentModel student)
+        {
+            using(SqlConnection con = new SqlConnection(CONNECTIONSTRING))
+            {
+                con.Open();
+                using (SqlCommand cmd = new SqlCommand("AddStudent", con))
+                {
+                    cmd.CommandType= CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@FirstName", student.FirstName);
+                    cmd.Parameters.AddWithValue("@LastName", student.LastName);
+                    cmd.Parameters.AddWithValue("@MiddletName", student.MiddleName);
+                    cmd.Parameters.AddWithValue("@GradeLevel", student.GradeLevel);
+                    cmd.Parameters.AddWithValue("@Section", student.Section);
+                    cmd.Parameters.AddWithValue("@Gender", student.Gender);
+                    cmd.Parameters.AddWithValue("@ContactNumber", student.ContactNumber);
+                    cmd.Parameters.AddWithValue("@Address", student.Address);
+                    cmd.Parameters.AddWithValue("@EnrollmentStatus", student.EnrollmentStatus);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
     }
 }

@@ -67,5 +67,6 @@
     <Build Include="Table\TblUser.sql" />
     <Build Include="Table\Student.sql" />
     <Build Include="Stored Procedure\GetAllStudents.sql" />
+    <Build Include="Stored Procedure\AddStudent.sql" />
   </ItemGroup>
 </Project>
