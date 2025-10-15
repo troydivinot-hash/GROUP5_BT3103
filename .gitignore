@@ -13,3 +13,9 @@
 /EventDriven.Project.DB/EventDriven.Project.DB.dbmdl
 /EventDriven.Project.DB/EventDriven.Project.DB.refactorlog
 /.gitignore
+/EventDriven.Project.Logic/bin/Debug/net8.0/EventDriven.Project.Logic.dll
+/EventDriven.Project.Logic/bin/Debug/net8.0/EventDriven.Project.Logic.pdb
+/EventDriven.Project.Logic/bin/Debug/net8.0/EventDriven.Project.Model.dll
+/EventDriven.Project.Logic/bin/Debug/net8.0/EventDriven.Project.Model.pdb
+/EventDriven.Project.Model/bin/Debug/net8.0/EventDriven.Project.Model.dll
+/EventDriven.Project.Model/bin/Debug/net8.0/EventDriven.Project.Model.pdb
