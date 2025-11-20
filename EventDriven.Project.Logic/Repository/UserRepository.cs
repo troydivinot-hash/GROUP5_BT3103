@@ -11,7 +11,7 @@ namespace EventDriven.Project.Logic.Repository
 {
     internal class UserRepository
     {
-        private string CONNECTIONSTRING = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=EventDriven.Project.DB;Integrated Security=True;TrustServerCertificate=True";
+        private string CONNECTIONSTRING = "Data Source=DESKTOP-PK86BAT\\SQLEXPRESS;Initial Catalog=EventDriven.Project.DB;Integrated Security=True;TrustServerCertificate=True";
 
         public UserModel ValidateUser(string Username, string Password)//Form1 Validate User
         {
