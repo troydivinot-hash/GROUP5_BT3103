@@ -28,7 +28,7 @@ namespace EventDriven.Project.Logic.Controller
             studentRepository.InsertStudent(student);
         }
 
-        // New: Wrapper for updating a student
+
         public void UpdateStudent(StudentModel student)
         {
             studentRepository.UpdateStudent(student);
