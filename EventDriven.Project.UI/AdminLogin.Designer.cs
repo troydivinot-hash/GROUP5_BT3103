@@ -51,7 +51,8 @@
             passwordtxt.Margin = new Padding(4);
             passwordtxt.Name = "passwordtxt";
             passwordtxt.Size = new Size(292, 31);
-            passwordtxt.TabIndex = 1;
+            passwordtxt.TabIndex = 2;
+            passwordtxt.UseSystemPasswordChar = true;
             // 
             // username
             // 
@@ -84,7 +85,7 @@
             adminbtn.Margin = new Padding(4);
             adminbtn.Name = "adminbtn";
             adminbtn.Size = new Size(118, 36);
-            adminbtn.TabIndex = 5;
+            adminbtn.TabIndex = 3;
             adminbtn.Text = "Login";
             adminbtn.UseVisualStyleBackColor = false;
             adminbtn.Click += adminbtn_Click;
@@ -96,7 +97,7 @@
             usernametxt.Margin = new Padding(4);
             usernametxt.Name = "usernametxt";
             usernametxt.Size = new Size(292, 31);
-            usernametxt.TabIndex = 6;
+            usernametxt.TabIndex = 1;
             // 
             // label3
             // 

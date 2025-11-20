@@ -13,7 +13,7 @@ namespace EventDriven.Project.UI
 {
     public partial class Student_Information : Form
     {
-        private StudentController studentController; 
+        private StudentController studentController;
         public Student_Information()
         {
             studentController = new StudentController();
@@ -28,6 +28,24 @@ namespace EventDriven.Project.UI
         private void Student_Information_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = studentController.GetAllStudents();
+        }
+
+        private void backbtn_Click(object sender, EventArgs e)
+        {
+            AdminDashboard adminDashboard = new AdminDashboard();
+            adminDashboard.Show();
+            this.Close();
+
+            Registrar_Dashboard registrar_Dashboard = new Registrar_Dashboard();
+            registrar_Dashboard.Show();
+            this.Close();
+        }
+
+        private void Addbtn_Click(object sender, EventArgs e)
+        {
+            AddStudent addStudent = new AddStudent();
+            addStudent.Show();
+            this.Close();
         }
     }
 }

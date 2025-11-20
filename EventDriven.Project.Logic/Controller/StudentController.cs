@@ -8,18 +8,36 @@ using EventDriven.Project.Model;
 
 namespace EventDriven.Project.Logic.Controller
 {
-   public class StudentController
+    public class StudentController
     {
-       private StudentRepository studentRepository;
-        public StudentController() 
+        private StudentRepository studentRepository;
+
+        public StudentController()
         {
             studentRepository = new StudentRepository();
-
         }
-        public List<StudentModel> GetAllStudents() 
+
+        public List<StudentModel> GetAllStudents()
         {
             return studentRepository.GetAllStudents();
         }
 
+        // New: Wrapper for inserting a student
+        public void AddStudent(StudentModel student)
+        {
+            studentRepository.InsertStudent(student);
+        }
+
+
+        public void UpdateStudent(StudentModel student)
+        {
+            studentRepository.UpdateStudent(student);
+        }
+
+   
+        public void DeleteStudent(int studentId)
+        {
+            studentRepository.DeleteStudent(studentId);
+        }
     }
 }

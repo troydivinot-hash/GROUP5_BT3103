@@ -1,13 +1,21 @@
 ﻿CREATE TABLE [dbo].[Student]
 (
-	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
-    [LastName] VARCHAR(50) NOT NULL, 
-    [FirstName] VARCHAR(50) NOT NULL, 
-    [MiddleName] VARCHAR(50) NOT NULL, 
-    [GradeLevel] INT NOT NULL, 
-    [Section] VARCHAR(50) NOT NULL, 
-    [Gender] VARCHAR(50) NOT NULL, 
-    [ContactNumber] VARCHAR(50) NOT NULL, 
-    [Address] VARCHAR(50) NOT NULL, 
-    [EnrollmentStatus] VARCHAR(50) NULL
+    ID INT IDENTITY(1,1) PRIMARY KEY,
+    LastName VARCHAR(50) NULL,
+    FirstName VARCHAR(50) NULL,
+    MiddleName VARCHAR(50) NULL,
+    Suffix VARCHAR(20) NULL,
+    DateOfBirth DATE NULL,
+    Address VARCHAR(255) NULL,
+    Gender VARCHAR(50) NOT NULL,
+    ContactNumber VARCHAR(50) NOT NULL,
+    Email VARCHAR(100) NOT NULL,
+    StudentType VARCHAR(50) NOT NULL, 
+    FathersName VARCHAR(50) NOT NULL,
+    FathersContact VARCHAR(50) NOT NULL,
+    MothersName VARCHAR(50) NOT NULL,
+    MothersContact VARCHAR(50) NOT NULL,
+    GuardianName VARCHAR(50) NULL,
+    GuardianContact VARCHAR(50) NULL,
+    Relationship VARCHAR(50) NOT NULL
 )

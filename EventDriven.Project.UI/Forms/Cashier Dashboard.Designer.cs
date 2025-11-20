@@ -36,10 +36,11 @@
             cashierreports = new Button();
             textBox1 = new TextBox();
             panel1 = new Panel();
-            pictureBox2 = new PictureBox();
+            panel2 = new Panel();
+            panel3 = new Panel();
+            panel4 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -78,10 +79,10 @@
             // cashierlogout
             // 
             cashierlogout.BackColor = SystemColors.Control;
-            cashierlogout.Location = new Point(11, 466);
+            cashierlogout.Location = new Point(37, 466);
             cashierlogout.Margin = new Padding(4);
             cashierlogout.Name = "cashierlogout";
-            cashierlogout.Size = new Size(249, 44);
+            cashierlogout.Size = new Size(195, 44);
             cashierlogout.TabIndex = 125;
             cashierlogout.Text = "LogOut";
             cashierlogout.UseVisualStyleBackColor = false;
@@ -105,33 +106,49 @@
             textBox1.Margin = new Padding(4);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(292, 793);
+            textBox1.Size = new Size(292, 1060);
             textBox1.TabIndex = 123;
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.InactiveCaption;
-            panel1.Controls.Add(pictureBox2);
-            panel1.Location = new Point(313, 30);
+            panel1.BackColor = SystemColors.ButtonHighlight;
+            panel1.Controls.Add(panel4);
+            panel1.Location = new Point(279, 101);
             panel1.Name = "panel1";
-            panel1.Size = new Size(736, 653);
+            panel1.Size = new Size(1647, 833);
             panel1.TabIndex = 129;
             // 
-            // pictureBox2
+            // panel2
             // 
-            pictureBox2.Image = Properties.Resources.pngtree_school_classroom_with_chalkboard_and_desk_in_3d_rendering_image_3850971;
-            pictureBox2.Location = new Point(0, 32);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(736, 594);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 0;
-            pictureBox2.TabStop = false;
+            panel2.BackColor = SystemColors.InactiveCaption;
+            panel2.Location = new Point(279, -4);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1630, 114);
+            panel2.TabIndex = 130;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = SystemColors.InactiveCaption;
+            panel3.Location = new Point(279, 916);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(1630, 114);
+            panel3.TabIndex = 131;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = SystemColors.InactiveCaption;
+            panel4.Location = new Point(1470, -102);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(160, 1031);
+            panel4.TabIndex = 0;
             // 
             // Cashier_Dashboard
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1088, 740);
+            ClientSize = new Size(1898, 1024);
+            Controls.Add(panel3);
+            Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(button1);
             Controls.Add(pictureBox1);
@@ -144,7 +161,6 @@
             Load += Cashier_Dashboard_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -158,6 +174,8 @@
         private Button cashierreports;
         private TextBox textBox1;
         private Panel panel1;
-        private PictureBox pictureBox2;
+        private Panel panel4;
+        private Panel panel2;
+        private Panel panel3;
     }
 }
