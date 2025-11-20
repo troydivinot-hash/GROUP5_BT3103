@@ -34,7 +34,7 @@ namespace EventDriven.Project.Logic.Controller
             studentRepository.UpdateStudent(student);
         }
 
-        // New: Wrapper for deleting a student
+   
         public void DeleteStudent(int studentId)
         {
             studentRepository.DeleteStudent(studentId);
