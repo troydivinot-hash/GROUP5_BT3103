@@ -1,32 +1,86 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="Forms\AddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Assessment.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="AdminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Cashier Dashboard.cs">
+    <Compile Update="Forms\Cashier Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Cashier Login.cs">
+    <Compile Update="Forms\Cashier Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="AdminLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Login User Roles.cs">
+    <Compile Update="Forms\CashierPaymentUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Login User Roles.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="loginn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Registrar Dashboard.cs">
+    <Compile Update="Forms\PaymentUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Registrar Login.cs">
+    <Compile Update="Forms\Registrar Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Student Information.cs">
+    <Compile Update="Forms\Registrar Login.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Student Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Student Registration admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\View Student Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UserControlForms\UCButtons.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControlForms\UCAssessmentList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControlForms\UCHistoryList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControlForms\UCInformationList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControlForms\UCPaymentList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControlForms\UCRegistrationList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControlForms\UCReportsList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControlForms\UCStudentAssessment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControlForms\UCStudentHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControlForms\UCStudentInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControlForms\UCStudentPayment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControlForms\UCStudentRegistration.cs">
+      <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
 </Project>

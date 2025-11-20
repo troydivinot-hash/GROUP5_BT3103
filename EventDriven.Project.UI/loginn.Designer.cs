@@ -32,6 +32,8 @@
             label3 = new Label();
             button1 = new Button();
             panel1 = new Panel();
+            panel2 = new Panel();
+            panel3 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -53,7 +55,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Trebuchet MS", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.FromArgb(30, 58, 138);
-            label3.Location = new Point(43, 255);
+            label3.Location = new Point(35, 280);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(772, 44);
@@ -64,7 +66,7 @@
             // 
             button1.BackColor = SystemColors.ButtonFace;
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(330, 409);
+            button1.Location = new Point(328, 395);
             button1.Name = "button1";
             button1.Size = new Size(182, 43);
             button1.TabIndex = 12;
@@ -78,20 +80,41 @@
             panel1.Controls.Add(button1);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label3);
-            panel1.Location = new Point(135, 58);
+            panel1.Location = new Point(498, 252);
             panel1.Name = "panel1";
-            panel1.Size = new Size(850, 533);
+            panel1.Size = new Size(850, 511);
             panel1.TabIndex = 13;
             panel1.Paint += panel1_Paint;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = SystemColors.ActiveCaption;
+            panel2.ForeColor = SystemColors.ActiveCaption;
+            panel2.Location = new Point(-1, -6);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1911, 108);
+            panel2.TabIndex = 14;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = SystemColors.ActiveCaption;
+            panel3.ForeColor = SystemColors.ActiveCaption;
+            panel3.Location = new Point(-1, 923);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(1911, 108);
+            panel3.TabIndex = 15;
             // 
             // loginn
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
-            ClientSize = new Size(1130, 640);
+            ClientSize = new Size(1898, 1024);
+            Controls.Add(panel3);
+            Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "loginn";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
             Load += loginn_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -106,5 +129,7 @@
         private Label label3;
         private Button button1;
         private Panel panel1;
+        private Panel panel2;
+        private Panel panel3;
     }
 }

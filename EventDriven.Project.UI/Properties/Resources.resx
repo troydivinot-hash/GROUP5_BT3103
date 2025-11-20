@@ -118,19 +118,34 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="548607005_1839201253329862_3893103805273494200_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\548607005_1839201253329862_3893103805273494200_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="547096583_1527320285115077_582208575037827567_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\547096583_1527320285115077_582208575037827567_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="546226130_24550255771293743_5835087672123755509_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\546226130_24550255771293743_5835087672123755509_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="peksur" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\peksur.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="547096583_1527320285115077_582208575037827567_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\547096583_1527320285115077_582208575037827567_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="548607005_1839201253329862_3893103805273494200_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\548607005_1839201253329862_3893103805273494200_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pngtree-school-classroom-with-chalkboard-and-desk-in-3d-rendering-image_3850971" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngtree-school-classroom-with-chalkboard-and-desk-in-3d-rendering-image_3850971.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus (3)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="write" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\write.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus (3)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="peksur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\peksur.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bin (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bin (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

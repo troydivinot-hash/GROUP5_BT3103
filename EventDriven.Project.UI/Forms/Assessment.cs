@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace EventDriven.Project.UI
 {
-    public partial class Registrar_Dashboard : Form
+    public partial class Admin_Assessment : Form
     {
-        public Registrar_Dashboard()
+        public Admin_Assessment()
         {
             InitializeComponent();
         }
 
-        private void adminlogout_Click(object sender, EventArgs e)
+        private void backbtn_Click(object sender, EventArgs e)
         {
-            Login_User_Roles login_User_Roles = new Login_User_Roles();
-            login_User_Roles.Show();
-            this.Close();
+           AdminDashboard adminDashboard = new AdminDashboard();
+            adminDashboard.Show();
+            this.Hide();
         }
     }
 }

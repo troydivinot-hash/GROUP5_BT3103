@@ -17,61 +17,63 @@ VALUES
     ('cashier', 'cashier123', 'Cashier');
 
 -- Student Table Values
-INSERT INTO Student (LastName, FirstName, MiddleName, GradeLevel, Section, Gender, ContactNumber, Address, EnrollmentStatus)
-VALUES -- Grade 7 - Section Fluorescent
-('Santos', 'Juan', 'Reyes', 7, 'Fluorescent', 'Male', '09123456701', 'Antipolo City', 'Enrolled'),
-('Dela Cruz', 'Maria', 'Lopez', 7, 'Fluorescent', 'Female', '09123456702', 'Quezon City', 'Enrolled'),
-('Garcia', 'Pedro', 'Bautista', 7, 'Fluorescent', 'Male', '09123456703', 'Pasig City', 'Enrolled'),
-('Reyes', 'Ana', 'Torres', 7, 'Fluorescent', 'Female', '09123456704', 'Marikina City', 'Enrolled'),
-('Mendoza', 'Jose', 'Villanueva', 7, 'Fluorescent', 'Male', '09123456705', 'Caloocan City', 'Enrolled'),
-('Castillo', 'Rosa', 'Ramos', 7, 'Fluorescent', 'Female', '09123456706', 'Manila City', 'Enrolled'),
-('Aquino', 'Lito', 'Domingo', 7, 'Fluorescent', 'Male', '09123456707', 'Mandaluyong City', 'Enrolled'),
-('Domingo', 'Grace', 'Fernandez', 7, 'Fluorescent', 'Female', '09123456708', 'San Mateo, Rizal', 'Enrolled'),
-('Ramos', 'Nathan', 'Ortiz', 7, 'Fluorescent', 'Male', '09123456709', 'Taguig City', 'Enrolled'),
-('Perez', 'Angela', 'Navarro', 7, 'Fluorescent', 'Female', '09123456710', 'Pateros City', 'Enrolled'),
-('Martinez', 'David', 'Vergara', 7, 'Fluorescent', 'Male', '09123456711', 'Valenzuela City', 'Enrolled'),
-('Navarro', 'Chloe', 'Aguilar', 7, 'Fluorescent', 'Female', '09123456712', 'Muntinlupa City', 'Enrolled'),
+INSERT INTO Student
+(
+    LastName, FirstName, MiddleName, Suffix, DateOfBirth, Address, Gender,
+    ContactNumber, Email, StudentType,
+    FathersName, FathersContact, MothersName, MothersContact,
+    GuardianName, GuardianContact, Relationship
+)
+VALUES
+-- Grade 7
+('Santos', 'Juan', 'Reyes', NULL, '2013-08-15', 'Antipolo City', 'Male', '09123456701', 'juan.santos@email.com', 'New', 'Jose Santos', '09991234567', 'Maria Reyes', '09998765432', 'Pedro Santos', '09990001111', 'Uncle'),
+('Dela Cruz', 'Maria', 'Lopez', NULL, '2013-07-20', 'Quezon City', 'Female', '09123456702', 'maria.delacruz@email.com', 'New', 'Juan Dela Cruz', '09992345678', 'Ana Lopez', '09997654321', NULL, NULL, 'N/A'),
+('Garcia', 'Pedro', 'Bautista', NULL, '2013-04-30', 'Pasig City', 'Male', '09123456703', 'pedro.garcia@email.com', 'New', 'Carlos Garcia', '09993456789', 'Luz Bautista', '09996543210', 'Luis Garcia', '09995432109', 'Guardian'),
+('Reyes', 'Ana', 'Torres', NULL, '2013-11-02', 'Marikina City', 'Female', '09123456704', 'ana.reyes@email.com', 'New', 'Jose Torres', '09984321654', 'Maria Torres', '09987654123', NULL, NULL, 'N/A'),
+('Mendoza', 'Jose', 'Villanueva', NULL, '2013-06-10', 'Caloocan City', 'Male', '09123456705', 'jose.mendoza@email.com', 'New', 'Luis Mendoza', '09981234567', 'Carmen Villanueva', '09981234568', NULL, NULL, 'N/A'),
+('Castillo', 'Rosa', 'Ramos', NULL, '2013-03-18', 'Manila City', 'Female', '09123456706', 'rosa.castillo@email.com', 'Old', 'Pedro Castillo', '09987654321', 'Luisa Ramos', '09987654322', 'Marta Ramos', '09986543210', 'Aunt'),
+('Aquino', 'Lito', 'Domingo', NULL, '2013-01-25', 'Mandaluyong City', 'Male', '09123456707', 'lito.aquino@email.com', 'New', 'Gerard Aquino', '09984321654', 'Helen Domingo', '09987651099', NULL, NULL, 'N/A'),
+('Domingo', 'Grace', 'Fernandez', NULL, '2013-05-07', 'San Mateo, Rizal', 'Female', '09123456708', 'grace.domingo@email.com', 'New', 'Samuel Fernandez', '09985432100', 'Liza Domingo', '09983421678', 'Carlos Fernandez', '09983217654', 'Guardian'),
+('Ramos', 'Nathan', 'Ortiz', NULL, '2013-07-08', 'Taguig City', 'Male', '09123456709', 'nathan.ramos@email.com', 'Old', 'Victor Ramos', '09982345678', 'Clara Ortiz', '09981236754', NULL, NULL, 'N/A'),
+('Perez', 'Angela', 'Navarro', NULL, '2013-02-11', 'Pateros City', 'Female', '09123456710', 'angela.perez@email.com', 'New', 'Ricardo Perez', '09980123456', 'Clara Navarro', '09980987654', NULL, NULL, 'N/A'),
+('Martinez', 'David', 'Vergara', NULL, '2013-11-22', 'Valenzuela City', 'Male', '09123456711', 'david.martinez@email.com', 'New', 'Alfredo Martinez', '09981234567', 'Maria Vergara', '09987654321', 'Felix Martinez', '09982345654', 'Guardian'),
+('Navarro', 'Chloe', 'Aguilar', NULL, '2013-08-30', 'Muntinlupa City', 'Female', '09123456712', 'chloe.navarro@email.com', 'Old', 'Jason Navarro', '09987651234', 'Leah Aguilar', '09985432123', NULL, NULL, 'N/A'),
 
--- Grade 8 - Section LED
-('Jimenez', 'Ryan', 'Dominguez', 8, 'LED', 'Male', '09123456713', 'Olongapo City', 'Enrolled'),
-('Serrano', 'Hannah', 'Cortez', 8, 'LED', 'Female', '09123456714', 'Lucena City', 'Enrolled'),
-('Rivera', 'Isabella', 'Navarro', 8, 'LED', 'Female', '09123456715', 'Legazpi City', 'Enrolled'),
-('Pascual', 'Christian', 'Diaz', 8, 'LED', 'Male', '09123456716', 'Iloilo City', 'Enrolled'),
-('Torres', 'Angela', 'Castro', 8, 'LED', 'Female', '09123456717', 'Davao City', 'Enrolled'),
-('Vergara', 'David', 'Ramos', 8, 'LED', 'Male', '09123456718', 'Zamboanga City', 'Enrolled'),
-('Aquino', 'Sophia', 'Martinez', 8, 'LED', 'Female', '09123456719', 'Cavite City', 'Enrolled'),
-('Domingo', 'Mark', 'Perez', 8, 'LED', 'Male', '09123456720', 'Bacoor City', 'Enrolled'),
-('Villanueva', 'Ella', 'Reyes', 8, 'LED', 'Female', '09123456721', 'Calamba City', 'Enrolled'),
-('Delos Santos', 'Ian', 'Garcia', 8, 'LED', 'Male', '09123456722', 'Dasmarinas City', 'Enrolled'),
-('Tan', 'Julia', 'Torres', 8, 'LED', 'Female', '09123456723', 'Trece Martires City', 'Enrolled'),
-('Lim', 'Kevin', 'Ortiz', 8, 'LED', 'Male', '09123456724', 'Imus City', 'Enrolled'),
-('Go', 'Karen', 'Lopez', 8, 'LED', 'Female', '09123456725', 'San Pedro City', 'Enrolled'),
+-- Grade 8
+('Jimenez', 'Ryan', 'Dominguez', NULL, '2012-09-18', 'Olongapo City', 'Male', '09123456713', 'ryan.jimenez@email.com', 'New', 'Mario Jimenez', '09983421678', 'Anna Dominguez', '09981236754', NULL, NULL, 'N/A'),
+('Serrano', 'Hannah', 'Cortez', NULL, '2012-06-30', 'Lucena City', 'Female', '09123456714', 'hannah.serrano@email.com', 'Old', 'Jose Serrano', '09987654321', 'Linda Cortez', '09987651099', 'Martha Serrano', '09986543210', 'Aunt'),
+('Rivera', 'Isabella', 'Navarro', NULL, '2012-11-10', 'Legazpi City', 'Female', '09123456715', 'isabella.rivera@email.com', 'New', 'Ramon Rivera', '09981234567', 'Liza Navarro', '09982345678', NULL, NULL, 'N/A'),
+('Pascual', 'Christian', 'Diaz', NULL, '2012-03-05', 'Iloilo City', 'Male', '09123456716', 'christian.pascual@email.com', 'New', 'Manuel Pascual', '09980123456', 'Ana Diaz', '09980987654', NULL, NULL, 'N/A'),
+('Torres', 'Angela', 'Castro', NULL, '2012-12-11', 'Davao City', 'Female', '09123456717', 'angela.torres@email.com', 'New', 'Jose Torres', '09983456789', 'Clara Castro', '09987654321', 'Mia Torres', '09985432109', 'Guardian'),
+('Vergara', 'David', 'Ramos', NULL, '2012-08-09', 'Zamboanga City', 'Male', '09123456718', 'david.vergara@email.com', 'Old', 'Carlos Vergara', '09986543210', 'Luz Ramos', '09982345654', NULL, NULL, 'N/A'),
+('Aquino', 'Sophia', 'Martinez', NULL, '2012-04-24', 'Cavite City', 'Female', '09123456719', 'sophia.aquino@email.com', 'New', 'Gerard Aquino', '09981237856', 'Helen Martinez', '09987651023', NULL, NULL, 'N/A'),
+('Domingo', 'Mark', 'Perez', NULL, '2012-02-17', 'Bacoor City', 'Male', '09123456720', 'mark.domingo@email.com', 'New', 'Samuel Perez', '09980123789', 'Liza Domingo', '09981239876', 'Carlos Perez', '09982347561', 'Guardian'),
+('Villanueva', 'Ella', 'Reyes', NULL, '2012-10-22', 'Calamba City', 'Female', '09123456721', 'ella.villanueva@email.com', 'Old', 'Victor Villanueva', '09987651099', 'Clara Reyes', '09987653210', NULL, NULL, 'N/A'),
+('Delos Santos', 'Ian', 'Garcia', NULL, '2012-05-30', 'Dasmarinas City', 'Male', '09123456722', 'ian.delossantos@email.com', 'New', 'Alfredo Delos Santos', '09982351234', 'Felicia Garcia', '09981237654', NULL, NULL, 'N/A'),
+('Tan', 'Julia', 'Torres', NULL, '2012-08-14', 'Trece Martires City', 'Female', '09123456723', 'julia.tan@email.com', 'New', 'Roberto Tan', '09984561234', 'Clarissa Torres', '09983456123', 'Maria Tan', '09987654321', 'Aunt'),
+('Lim', 'Kevin', 'Ortiz', NULL, '2012-04-18', 'Imus City', 'Male', '09123456724', 'kevin.lim@email.com', 'Old', 'Daniel Lim', '09986543212', 'Elsa Ortiz', '09983217654', NULL, NULL, 'N/A'),
+('Go', 'Karen', 'Lopez', NULL, '2012-06-28', 'San Pedro City', 'Female', '09123456725', 'karen.go@email.com', 'New', 'Alfred Go', '09987654322', 'Lana Lopez', '09985432123', NULL, NULL, 'N/A'),
 
--- Grade 9 - Section Halogen
-('Aguilar', 'Paulo', 'Ramos', 9, 'Halogen', 'Male', '09123456726', 'Binan City', 'Enrolled'),
-('Navarro', 'Bianca', 'Mendoza', 9, 'Halogen', 'Female', '09123456727', 'Sta. Rosa City', 'Enrolled'),
-('Vergara', 'Simon', 'Perez', 9, 'Halogen', 'Male', '09123456728', 'Tagaytay City', 'Enrolled'),
-('Reyes', 'Elaine', 'Bautista', 9, 'Halogen', 'Female', '09123456729', 'Carmona City', 'Enrolled'),
-('Santos', 'Victor', 'Castillo', 9, 'Halogen', 'Male', '09123456730', 'General Trias City', 'Enrolled'),
-('Gonzalez', 'Patricia', 'Ortiz', 9, 'Halogen', 'Female', '09123456731', 'Silang, Cavite', 'Enrolled'),
-('Ramos', 'Julian', 'Tan', 9, 'Halogen', 'Male', '09123456732', 'Naga City', 'Enrolled'),
-('Lopez', 'Karla', 'Lim', 9, 'Halogen', 'Female', '09123456733', 'Bicol City', 'Enrolled'),
-('Martinez', 'Enrique', 'Domingo', 9, 'Halogen', 'Male', '09123456734', 'Lucban, Quezon', 'Enrolled'),
-('Aquino', 'Fiona', 'Pascual', 9, 'Halogen', 'Female', '09123456735', 'San Fernando, Pampanga', 'Enrolled'),
-('Castillo', 'Megan', 'Ramos', 9, 'Halogen', 'Female', '09123456736', 'Malolos, Bulacan', 'Enrolled'),
-('Bautista', 'Liam', 'Mendoza', 9, 'Halogen', 'Male', '09123456737', 'Tarlac City', 'Enrolled'),
+-- Grade 9
+('Aguilar', 'Paulo', 'Ramos', NULL, '2011-08-21', 'Binan City', 'Male', '09123456726', 'paulo.aguilar@email.com', 'New', 'Pedro Aguilar', '09989876543', 'Lana Ramos', '09988765432', 'Jorge Aguilar', '09987654321', 'Guardian'),
+('Navarro', 'Bianca', 'Mendoza', NULL, '2011-10-30', 'Sta. Rosa City', 'Female', '09123456727', 'bianca.navarro@email.com', 'Old', 'Juan Navarro', '09986543210', 'Maria Mendoza', '09985432109', NULL, NULL, 'N/A'),
+('Vergara', 'Simon', 'Perez', NULL, '2011-11-15', 'Tagaytay City', 'Male', '09123456728', 'simon.vergara@email.com', 'New', 'Carlos Vergara', '09987654322', 'Luz Perez', '09986543211', NULL, NULL, 'N/A'),
+('Reyes', 'Elaine', 'Bautista', NULL, '2011-03-22', 'Carmona City', 'Female', '09123456729', 'elaine.reyes@email.com', 'New', 'Jose Reyes', '09981234567', 'Maria Bautista', '09987654321', NULL, NULL, 'N/A'),
+('Santos', 'Victor', 'Castillo', NULL, '2011-09-18', 'General Trias City', 'Male', '09123456730', 'victor.santos@email.com', 'Old', 'Alfredo Santos', '09987653210', 'Carmen Castillo', '09981234567', NULL, NULL, 'N/A'),
+('Gonzalez', 'Patricia', 'Ortiz', NULL, '2011-12-30', 'Silang, Cavite', 'Female', '09123456731', 'patricia.gonzalez@email.com', 'New', 'Mario Gonzalez', '09986543210', 'Liza Ortiz', '09987654321', NULL, NULL, 'N/A'),
+('Ramos', 'Julian', 'Tan', NULL, '2011-05-12', 'Naga City', 'Male', '09123456732', 'julian.ramos@email.com', 'New', 'Victor Ramos', '09985673421', 'Clara Tan', '09987651234', NULL, NULL, 'N/A'),
+('Lopez', 'Karla', 'Lim', NULL, '2011-11-23', 'Bicol City', 'Female', '09123456733', 'karla.lopez@email.com', 'Old', 'Roberto Lopez', '09987654321', 'Elsa Lim', '09981234567', 'Maria Lopez', '09986543210', 'Aunt'),
+('Martinez', 'Enrique', 'Domingo', NULL, '2011-08-25', 'Lucban, Quezon', 'Male', '09123456734', 'enrique.martinez@email.com', 'New', 'Manuel Martinez', '09987651234', 'Ana Domingo', '09985432123', NULL, NULL, 'N/A'),
+('Aquino', 'Fiona', 'Pascual', NULL, '2011-03-18', 'San Fernando, Pampanga', 'Female', '09123456735', 'fiona.aquino@email.com', 'New', 'Gerard Aquino', '09981234567', 'Helen Pascual', '09987654321', NULL, NULL, 'N/A'),
 
--- Grade 10 - Section Incandescent
-('Ramos', 'Nathaniel', 'Cruz', 10, 'Incandescent', 'Male', '09123456738', 'Baguio City', 'Enrolled'),
-('Perez', 'Andrea', 'Reyes', 10, 'Incandescent', 'Female', '09123456739', 'Dagupan City', 'Enrolled'),
-('Torres', 'Joshua', 'Castillo', 10, 'Incandescent', 'Male', '09123456740', 'Laoag City', 'Enrolled'),
-('Santos', 'Monica', 'Aquino', 10, 'Incandescent', 'Female', '09123456741', 'Vigan City', 'Enrolled'),
-('Garcia', 'Samuel', 'Villanueva', 10, 'Incandescent', 'Male', '09123456742', 'Bangued City', 'Enrolled'),
-('Navarro', 'Isabel', 'Bautista', 10, 'Incandescent', 'Female', '09123456743', 'Bontoc City', 'Enrolled'),
-('Lim', 'Erik', 'Domingo', 10, 'Incandescent', 'Male', '09123456744', 'Tuguegarao City', 'Enrolled'),
-('Tan', 'Rachel', 'Torres', 10, 'Incandescent', 'Female', '09123456745', 'Cabanatuan City', 'Enrolled'),
-('Villanueva', 'Harvey', 'Perez', 10, 'Incandescent', 'Male', '09123456746', 'San Jose City', 'Enrolled'),
-('Mendoza', 'Alexa', 'Gonzalez', 10, 'Incandescent', 'Female', '09123456747', 'Angeles City', 'Enrolled'),
-('Cruz', 'Nathan', 'Lopez', 10, 'Incandescent', 'Male', '09123456748', 'Mabalacat City', 'Enrolled'),
-('Aquino', 'Sophia', 'Ortiz', 10, 'Incandescent', 'Female', '09123456749', 'San Fernando, Pampanga', 'Enrolled'),
-('Domingo', 'Ethan', 'Ramos', 10, 'Incandescent', 'Male', '09123456750', 'Clark, Pampanga', 'Enrolled');
+-- Grade 10
+('Castillo', 'Megan', 'Ramos', NULL, '2010-02-15', 'Malolos, Bulacan', 'Female', '09123456736', 'megan.castillo@email.com', 'New', 'Pedro Castillo', '09987654321', 'Lana Ramos', '09981234567', NULL, NULL, 'N/A'),
+('Bautista', 'Liam', 'Mendoza', NULL, '2010-05-21', 'Tarlac City', 'Male', '09123456737', 'liam.bautista@email.com', 'Old', 'Carlos Bautista', '09981234567', 'Liza Mendoza', '09987654321', 'Jorge Mendoza', '09986543210', 'Guardian'),
+('Ramos', 'Nathaniel', 'Cruz', NULL, '2010-05-18', 'Baguio City', 'Male', '09123456738', 'nathaniel.ramos@email.com', 'New', 'Alfredo Ramos', '09982345679', 'Felicia Cruz', '09981234568', 'Walter Ramos', '09983456789', 'Uncle'),
+('Perez', 'Andrea', 'Reyes', NULL, '2010-08-22', 'Dagupan City', 'Female', '09123456739', 'andrea.perez@email.com', 'Old', 'Roberto Perez', '09980987654', 'Clarissa Reyes', '09980987655', NULL, NULL, 'N/A'),
+('Torres', 'Joshua', 'Castillo', NULL, '2010-11-05', 'Laoag City', 'Male', '09123456740', 'joshua.torres@email.com', 'New', 'Daniel Torres', '09981234567', 'Elsa Castillo', '09987654322', NULL, NULL, 'N/A'),
+('Santos', 'Monica', 'Aquino', NULL, '2010-04-11', 'Vigan City', 'Female', '09123456741', 'monica.santos@email.com', 'New', 'Lester Santos', '09981234567', 'Marian Aquino', '09987654321', NULL, NULL, 'N/A'),
+('Garcia', 'Samuel', 'Villanueva', NULL, '2010-07-06', 'Bangued City', 'Male', '09123456742', 'samuel.garcia@email.com', 'New', 'Ramon Garcia', '09987654321', 'Luz Villanueva', '09983217654', NULL, NULL, 'N/A'),
+('Navarro', 'Isabel', 'Bautista', NULL, '2010-06-15', 'Bontoc City', 'Female', '09123456743', 'isabel.navarro@email.com', 'Old', 'Juan Navarro', '09986543210', 'Maria Bautista', '09987654321', NULL, NULL, 'N/A'),
+('Lim', 'Erik', 'Domingo', NULL, '2010-03-26', 'Tuguegarao City', 'Male', '09123456744', 'erik.lim@email.com', 'New', 'Daniel Lim', '09983456123', 'Elsa Domingo', '09981237654', NULL, NULL, 'N/A'),
+('Tan', 'Rachel', 'Torres', NULL, '2010-09-21', 'Cabanatuan City', 'Female', '09123456745', 'rachel.tan@email.com', 'New', 'Roberto Tan', '09987651234', 'Clarissa Torres', '09985432123', NULL, NULL, 'N/A');

@@ -40,6 +40,7 @@
             button1 = new Button();
             panel5 = new Panel();
             label1 = new Label();
+            backbtn = new Button();
             panel1.SuspendLayout();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -56,7 +57,7 @@
             panel1.Controls.Add(panel4);
             panel1.Controls.Add(panel3);
             panel1.Controls.Add(panel2);
-            panel1.Location = new Point(59, 179);
+            panel1.Location = new Point(429, 314);
             panel1.Name = "panel1";
             panel1.Size = new Size(1098, 401);
             panel1.TabIndex = 0;
@@ -159,7 +160,7 @@
             // 
             panel5.BackColor = SystemColors.MenuBar;
             panel5.Controls.Add(label1);
-            panel5.Location = new Point(317, 70);
+            panel5.Location = new Point(669, 205);
             panel5.Name = "panel5";
             panel5.Size = new Size(597, 76);
             panel5.TabIndex = 1;
@@ -174,16 +175,29 @@
             label1.TabIndex = 0;
             label1.Text = "User Roles";
             // 
+            // backbtn
+            // 
+            backbtn.Location = new Point(129, 58);
+            backbtn.Name = "backbtn";
+            backbtn.Size = new Size(144, 47);
+            backbtn.TabIndex = 2;
+            backbtn.Text = "Back";
+            backbtn.UseVisualStyleBackColor = true;
+            backbtn.Click += backbtn_Click;
+            // 
             // Login_User_Roles
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.InactiveCaption;
-            ClientSize = new Size(1248, 676);
+            ClientSize = new Size(1898, 1024);
+            Controls.Add(backbtn);
             Controls.Add(panel5);
             Controls.Add(panel1);
             Name = "Login_User_Roles";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Login_User_Roles";
+            WindowState = FormWindowState.Maximized;
             Load += Login_User_Roles_Load;
             panel1.ResumeLayout(false);
             panel4.ResumeLayout(false);
@@ -211,5 +225,6 @@
         private Button button1;
         private Panel panel5;
         private Label label1;
+        private Button backbtn;
     }
 }
