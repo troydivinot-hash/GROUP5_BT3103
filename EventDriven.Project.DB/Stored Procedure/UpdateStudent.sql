@@ -14,8 +14,7 @@
     @FathersContact VARCHAR(50),  -- NOT NULL
     @MothersName VARCHAR(50),  -- NOT NULL
     @MothersContact VARCHAR(50),  -- NOT NULL
-    @GuardianName VARCHAR(50) = NULL, 
-    @GuardianContact VARCHAR(50) = NULL, 
+    @GuardianName VARCHAR(50) = NULL,  
     @Relationship VARCHAR(50)  -- NOT NULL
 AS
 BEGIN
@@ -38,8 +37,7 @@ BEGIN
             LastName = @LastName, FirstName = @FirstName, MiddleName = @MiddleName, Suffix = @Suffix,
             DateOfBirth = @DateOfBirth, Address = @Address, Gender = @Gender, ContactNumber = @ContactNumber,
             Email = @Email, StudentType = @StudentType, FathersName = @FathersName, FathersContact = @FathersContact,
-            MothersName = @MothersName, MothersContact = @MothersContact, GuardianName = @GuardianName,
-            GuardianContact = @GuardianContact, Relationship = @Relationship
+            MothersName = @MothersName, MothersContact = @MothersContact, GuardianName = @GuardianName, Relationship = @Relationship
         WHERE ID = @Id;
 
         IF @@ROWCOUNT = 0

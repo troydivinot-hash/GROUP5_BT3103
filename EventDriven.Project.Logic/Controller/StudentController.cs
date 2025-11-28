@@ -21,6 +21,7 @@ namespace EventDriven.Project.Logic.Controller
         {
             return studentRepository.GetAllStudents();
         }
+      
 
         // New: Wrapper for inserting a student
         public void AddStudent(StudentModel student)
@@ -38,6 +39,15 @@ namespace EventDriven.Project.Logic.Controller
         public void DeleteStudent(int studentId)
         {
             studentRepository.DeleteStudent(studentId);
+        }
+
+        public void RegisterStudent(StudentRegModel model)
+        {
+            studentRepository.RegisterStudent(model);
+        }
+        public StudentRegModel GetRegistration(int id)
+        {
+            return studentRepository.GetRegistration(id);
         }
     }
 }

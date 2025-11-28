@@ -7,7 +7,7 @@
     <Compile Update="Forms\Assessment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AdminDashboard.cs">
+    <Compile Update="FormDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Cashier Dashboard.cs">
@@ -46,8 +46,8 @@
     <Compile Update="Forms\View Student Registration.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UserControlForms\UCButtons.cs">
-      <SubType>UserControl</SubType>
+    <Compile Update="Student Admin Registration.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Update="UserControlForms\UCAssessmentList.cs">
       <SubType>UserControl</SubType>
@@ -71,12 +71,6 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="UserControlForms\UCStudentHistory.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="UserControlForms\UCStudentInformation.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="UserControlForms\UCStudentPayment.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="UserControlForms\UCStudentRegistration.cs">

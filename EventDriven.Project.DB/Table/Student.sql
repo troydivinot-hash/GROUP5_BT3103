@@ -16,6 +16,5 @@
     MothersName VARCHAR(50) NOT NULL,
     MothersContact VARCHAR(50) NOT NULL,
     GuardianName VARCHAR(50) NULL,
-    GuardianContact VARCHAR(50) NULL,
     Relationship VARCHAR(50) NOT NULL
 )

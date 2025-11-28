@@ -14,7 +14,6 @@
     @MothersName VARCHAR(50),  -- NOT NULL
     @MothersContact VARCHAR(50),  -- NOT NULL
     @GuardianName VARCHAR(50) = NULL, 
-    @GuardianContact VARCHAR(50) = NULL, 
     @Relationship VARCHAR(50)  -- NOT NULL, no default
 AS
 BEGIN
@@ -28,8 +27,8 @@ BEGIN
     END;
 
     BEGIN TRY
-        INSERT INTO Student (LastName, FirstName, MiddleName, Suffix, DateOfBirth, Address, Gender, ContactNumber, Email, StudentType, FathersName, FathersContact, MothersName, MothersContact, GuardianName, GuardianContact, Relationship)
-        VALUES (@LastName, @FirstName, @MiddleName, @Suffix, @DateOfBirth, @Address, @Gender, @ContactNumber, @Email, @StudentType, @FathersName, @FathersContact, @MothersName, @MothersContact, @GuardianName, @GuardianContact, @Relationship);
+        INSERT INTO Student (LastName, FirstName, MiddleName, Suffix, DateOfBirth, Address, Gender, ContactNumber, Email, StudentType, FathersName, FathersContact, MothersName, MothersContact, GuardianName, Relationship)
+        VALUES (@LastName, @FirstName, @MiddleName, @Suffix, @DateOfBirth, @Address, @Gender, @ContactNumber, @Email, @StudentType, @FathersName, @FathersContact, @MothersName, @MothersContact, @GuardianName, @Relationship);
     END TRY
     BEGIN CATCH
         DECLARE @ErrorMessage NVARCHAR(4000) = ERROR_MESSAGE();

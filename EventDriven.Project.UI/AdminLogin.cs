@@ -57,9 +57,10 @@ namespace EventDriven.Project.UI
                     if (Admin.Role.Equals("Admin"))
                     {
                         MessageBox.Show("Login Successful! Welcome " + Admin.Username, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        AdminDashboard Admindashboard = new AdminDashboard();
+                        FormDashboard Admindashboard = new FormDashboard("Admin");
                         Admindashboard.Show();
                         this.Close();
+                        
                     }
                     else
                     {

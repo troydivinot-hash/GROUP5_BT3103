@@ -43,7 +43,7 @@ namespace EventDriven.Project.UI
                     if (Registrar.Role.Equals("Registrar"))
                     {
                         MessageBox.Show("Login Successful! Welcome " + Registrar.Username, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Registrar_Dashboard Registrardashboard = new Registrar_Dashboard();
+                        FormDashboard Registrardashboard = new FormDashboard(Registrar.Role);
                         Registrardashboard.Show();
                         this.Close();
                     }

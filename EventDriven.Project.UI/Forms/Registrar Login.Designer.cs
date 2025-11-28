@@ -50,10 +50,11 @@
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
-            panel1.Location = new Point(131, 73);
+            panel1.Location = new Point(432, 281);
             panel1.Name = "panel1";
             panel1.Size = new Size(790, 375);
             panel1.TabIndex = 12;
+            panel1.TabStop = true;
             // 
             // panel2
             // 
@@ -176,7 +177,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1053, 521);
+            ClientSize = new Size(1898, 1024);
             Controls.Add(backbtn);
             Controls.Add(panel1);
             Name = "Registrar_Login";
