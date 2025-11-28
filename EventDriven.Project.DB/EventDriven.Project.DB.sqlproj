@@ -70,5 +70,19 @@
     <Build Include="Stored Procedure\InsertStudent.sql" />
     <Build Include="Stored Procedure\UpdateStudent.sql" />
     <Build Include="Stored Procedure\DeleteStudent.sql" />
+    <Build Include="Table\tblPayment.sql" />
+    <Build Include="Table\tblSection.sql" />
+    <Build Include="Table\tblStudentReg.sql" />
+    <Build Include="Table\tblTeacher.sql" />
+    <Build Include="Table\tblRooms.sql" />
+    <Build Include="Table\tblSchedule.sql" />
+    <Build Include="Table\tblSubject.sql" />
+    <Build Include="Stored Procedure\RegisterStudent.sql" />
+    <Build Include="Stored Procedure\GetStudentRegistrations.sql" />
+    <Build Include="Stored Procedure\GetStudentRegistration.sql" />
+    <Build Include="Stored Procedure\UpdateStudentReg.sql" />
+    <Build Include="Table\tblStudentSubject.sql" />
+    <Build Include="Stored Procedure\addSubjectToStudent.sql" />
+    <Build Include="Stored Procedure\addSubjectsToStudent.sql" />
   </ItemGroup>
 </Project>

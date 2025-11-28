@@ -143,7 +143,7 @@
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
-            panel1.Location = new Point(125, 69);
+            panel1.Location = new Point(448, 282);
             panel1.Name = "panel1";
             panel1.Size = new Size(790, 375);
             panel1.TabIndex = 10;
@@ -181,7 +181,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(224, 224, 224);
-            ClientSize = new Size(1053, 521);
+            ClientSize = new Size(1898, 1024);
             Controls.Add(backbtn);
             Controls.Add(panel1);
             ForeColor = Color.DeepSkyBlue;

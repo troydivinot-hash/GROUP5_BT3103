@@ -19,9 +19,9 @@ namespace EventDriven.Project.UI
 
         private void backbtn_Click(object sender, EventArgs e)
         {
-            AdminDashboard adminDashboard = new AdminDashboard();
-            adminDashboard.Show();
-            this.Close();
+            //FormDashboard adminDashboard = new FormDashboard();
+            //adminDashboard.Show();
+            //this.Close();/
 
             Registrar_Dashboard registrar_Dashboard = new Registrar_Dashboard();
             registrar_Dashboard.Show();

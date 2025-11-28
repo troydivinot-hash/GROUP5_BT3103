@@ -11,36 +11,51 @@ using EventDriven.Project.UI.UserControlForms;
 
 namespace EventDriven.Project.UI
 {
-    public partial class AdminDashboard : Form
+    public partial class FormDashboard : Form
     {
-        public AdminDashboard()
+        string role = "none";
+        public FormDashboard(string role)
         {
             InitializeComponent();
+            this.role = role;
+            removeButton();
+            
+        }
 
+        private void removeButton()
+        {
+            btnStudentInfo.Visible = true;
+            BtnStudentRegistration.Visible = true;
+            btnAssessment.Visible = true;
+            btnPayment.Visible = true;
+            btnPaymentHistory.Visible = true;
+            btnReports.Visible = true;
+            if (role.Equals("Cashier"))
+            {
+                btnStudentInfo.Visible = false;
+                BtnStudentRegistration.Visible = false;
+                btnAssessment.Visible = false;
+            } else if (role.Equals("Registrar"))
+            {
+                btnPayment.Visible = false;
+                btnPaymentHistory.Visible = false;
+            }
         }
 
         // -----------------------------
         // FUNCTION TO LOAD USER CONTROL
         // -----------------------------
-        private void LoadToPanel3(UserControl uc)
+        public void LoadToPanel3(UserControl uc)
         {
             panel3.Controls.Clear();
             uc.Dock = DockStyle.Fill;
             panel3.Controls.Add(uc);
         }
 
-        // Load into panel2
-        private void LoadToPanel2(UserControl uc)
-        {
-            panel2.Controls.Clear();
-            uc.Dock = DockStyle.Fill;
-            panel2.Controls.Add(uc);
-        }
 
         private void adminstinfo_Click(object sender, EventArgs e)
         {
             LoadToPanel3(new UCInformationList());
-            LoadToPanel2(new UCStudentInformation());
         }
 
         private void AdminDashboard_Load(object sender, EventArgs e)
@@ -61,7 +76,6 @@ namespace EventDriven.Project.UI
         private void button5_Click(object sender, EventArgs e)
         {
             LoadToPanel3(new UCHistoryList());
-            LoadToPanel2(new UCStudentHistory());
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -87,20 +101,17 @@ namespace EventDriven.Project.UI
 
         private void button3_Click(object sender, EventArgs e)
         {
-            LoadToPanel3(new UCAssessmentList());
-            LoadToPanel2(new UCStudentAssessment());
+            LoadToPanel3(new UCAssessmentList(this));
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             LoadToPanel3(new UCRegistrationList());
-            LoadToPanel2(new UCStudentRegistration());
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             LoadToPanel3(new UCPaymentList());
-            LoadToPanel2(new UCStudentPayment());
         }
 
         private void button6_Click(object sender, EventArgs e)

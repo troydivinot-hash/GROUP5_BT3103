@@ -40,7 +40,7 @@ namespace EventDriven.Project.UI
                     if (Cashier.Role.Equals("Cashier"))
                     {
                         MessageBox.Show("Login Successful! Welcome " + Cashier.Username, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Cashier_Dashboard cashierdashboard = new Cashier_Dashboard();
+                        FormDashboard cashierdashboard = new FormDashboard(Cashier.Role);
                         cashierdashboard.Show();
                         this.Close();
                     }

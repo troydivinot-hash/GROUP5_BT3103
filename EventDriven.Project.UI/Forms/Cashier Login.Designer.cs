@@ -140,7 +140,7 @@
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
-            panel1.Location = new Point(126, 70);
+            panel1.Location = new Point(459, 242);
             panel1.Name = "panel1";
             panel1.Size = new Size(790, 375);
             panel1.TabIndex = 11;
@@ -176,7 +176,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1053, 521);
+            ClientSize = new Size(1898, 1024);
             Controls.Add(backbtn);
             Controls.Add(panel1);
             Name = "Cashier_Login";
